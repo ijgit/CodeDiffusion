@@ -30,7 +30,7 @@
 
 - Execute the `script.sh` file located in the `experiments` directory.
 
-```
-cd experiments
-bash script.sh
-```
+    ```
+    cd experiments
+    bash script.sh
+    ```
