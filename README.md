@@ -7,8 +7,9 @@
 
 ## Introduction
 
-Bayesian Code Diffusion optimize deep learning programs with reduced compilation time by clustering subgraphs and diffusing reusable optimization parameters.
-The detailed implementation can be found in `tvm-codediffusion/python/tvm/auto_scheduler/task_scheduler.py` (subgraphs clustering) and `tvm-codediffusion/src/auto_scheduler/search_policy/sketch_policy_rules.cc` (code diffusion).
+- Bayesian Code Diffusion optimize deep learning programs with reduced compilation time by clustering subgraphs and diffusing reusable optimization parameters.
+- The detailed implementation can be found in `tvm-codediffusion/python/tvm/auto_scheduler/task_scheduler.py` (subgraphs clustering) and
+- `tvm-codediffusion/src/auto_scheduler/search_policy/sketch_policy_rules.cc` (code diffusion).
 
 ## Install
 
