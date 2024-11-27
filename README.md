@@ -1,4 +1,4 @@
-# Bayesian Code Diffusion Artifacts [MLSys 2025 Under Review]
+# Bayesian Code Diffusion Artifacts [OSDI 2025 Under Review]
 
 - This repository contains an implementation of Bayesian Code Diffusion.
 - The code has been tested using the Docker image `nvcr.io/nvidia/pytorch:23.04-py3`.
