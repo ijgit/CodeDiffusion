@@ -96,7 +96,7 @@ class SketchPolicy;
  */
 class SketchPolicyNode : public SearchPolicyNode {
  public:
-  /*! \brief the target states (Added by I.Jeong) */
+  /*! \brief the target states (Added by code-diffusion) */
   // Map<String, State> target_states;
   Array<State> target_states;
   std::vector<std::vector<std::tuple<size_t,size_t, size_t, std::vector<int>>>> target_sp_steps;
@@ -200,7 +200,7 @@ class SketchPolicy : public SearchPolicy {
    * \param init_search_callbacks SearchCallback to be called before schedule search.
    * \param target_states tmp state
    */
-  // Redefined by I.Jeong
+  // Redefined by code-diffusion
   SketchPolicy(SearchTask task, CostModel program_cost_model, Map<String, ObjectRef> params,
                int seed, int verbose, Optional<Array<SearchCallback>> init_search_callbacks, Array<State> target_states, std::string target_sketch="");
 

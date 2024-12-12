@@ -41,14 +41,14 @@ from . import _ffi_api
 
 logger = logging.getLogger("auto_scheduler")
 
-# Added by I.Jeong for testing
+# Added by code-diffusion for testing
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 # TEST_GROUP_NAME = 'vm_mod_fused_nn_conv2d_add_nn_relu'
 # TEST_GROUP_NAME = 'vm_mod_fused_nn_contrib_conv2d_NCHWc_add'
 # TEST_GROUP_NAME = 'vm_mod_fused_nn_contrib_conv2d_NCHWc_add_nn_relu'
-# Added by I.Jeong
+# Added by code-diffusion
 from .feature import get_per_store_features_from_measure_pairs, get_per_store_features_from_states
 
 def task_desc_to_group_name(
@@ -59,7 +59,7 @@ def task_desc_to_group_name(
         task_layers.pop()
     return '_'.join(task_layers)
 
-# Added by I.Jeong
+# Added by code-diffusion
 def make_task_group(
     tasks
 ):
@@ -155,7 +155,7 @@ def make_search_policies(
             else:
                 init_search_callbacks = None
                 
-            # by I.Jeong
+            # by code-diffusion
             
             if target_states == None:
                 search_policies = [
@@ -399,7 +399,7 @@ class TaskScheduler:
         self.best_task_info = [None for _ in range(len(self.tasks))]
 
         self.tune_option = self.measurer = self.search_policies = None
-        # added by i.jeong
+        # added by code-diffusion
         self.target_search_policies = None
         self.sub_search_policies = None
         

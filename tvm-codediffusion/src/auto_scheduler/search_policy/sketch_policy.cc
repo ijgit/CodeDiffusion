@@ -69,7 +69,7 @@ static InitThreadBind init_thread_bind;
 /********** Sketch policy **********/
 TVM_REGISTER_NODE_TYPE(SketchPolicyNode);
 
-// Redefined by I.Jeong
+// Redefined by code-diffusion
 SketchPolicy::SketchPolicy(SearchTask task, CostModel program_cost_model,
                            Map<String, ObjectRef> params, int seed, int verbose,
                            Optional<Array<SearchCallback>> init_search_callbacks,
@@ -77,7 +77,7 @@ SketchPolicy::SketchPolicy(SearchTask task, CostModel program_cost_model,
                             
   auto node = make_object<SketchPolicyNode>();
 
-  // Added by I.Jeong
+  // Added by code-diffusion
   // std::cout << "[SketchPolicy::SketchPolicy] target_state:" << target_states << std::endl;
   node->target_states = std::move(target_states);
   node->target_sketch = std::move(target_sketch);
@@ -340,7 +340,7 @@ std::pair<Array<MeasureInput>, Array<MeasureResult>> SketchPolicyNode::ContinueS
                         .count();
   std::cout << "[LOG] Time elapsed for measuring:" << duration << std::endl;                      
 
-  // Added by I.Jeong
+  // Added by code-diffusion
   // Update measured states throughputs. These states will join the EvolutionarySearch in later
   // search rounds.
   for (const auto& res : results) {
@@ -923,7 +923,7 @@ void PreloadCustomSketchRuleNode::Callback(SearchPolicyNode* policy) {
 }
 
 TVM_REGISTER_GLOBAL("auto_scheduler.SketchPolicy")
-    // Redefined by I.Jeong
+    // Redefined by code-diffusion
     .set_body_typed([](SearchTask task, CostModel program_cost_model, Map<String, ObjectRef> params,
                        int seed, int verbose,
                        Optional<Array<SearchCallback>> init_search_callbacks,

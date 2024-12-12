@@ -511,7 +511,7 @@ PopulationGenerationRule::ResultKind InitFillTileSize::Apply(SketchPolicyNode* p
   int max_innermost_split_factor =
       GetIntParam(policy->params, SketchParamKey::max_innermost_split_factor);
 
-  // Added by I.Jeong
+  // Added by code-diffusion
   // stage id, iter id, extent, lengths
 
   StateNode* pstate = state->CopyOnWrite();

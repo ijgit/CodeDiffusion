@@ -193,7 +193,7 @@ class SketchPolicy(SearchPolicy):
         "disable_change_compute_location": 0,
     }
 
-    # target_state Added by I.Jeong
+    # target_state Added by code-diffusion
     def __init__(
         self,
         task,
